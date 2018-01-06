@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="client.js"></script>
+		<script type="text/javascript">
+			google.charts.load('current', {'packages':['annotationchart']});
+      google.charts.setOnLoadCallback(getInfo);
+			setInterval(getInfo, 60000);
+		</script>
+	</head>
+	<body>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<a href="/server">SERVER</a>
+		<a href="/get/btc/history">BTC</a>
+		<a href="/get/xrp/history">XRP</a>
+		<div id="linechart_BTC"></div>
+		<div id="linechart_XRP"></div>
+	</body>
+</html>

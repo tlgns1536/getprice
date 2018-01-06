@@ -1,0 +1,21 @@
+{
+  "name": "beyondcoin",
+  "version": "0.0.1",
+  "description": "coin trading system",
+  "main": "main.js",
+  "author": "novacanon@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "forever start -w main.js"
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.0.0-rc2",
+    "path": "^0.12.7",
+    "request": "^2.83.0"
+  }
+}
